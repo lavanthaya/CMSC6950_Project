@@ -38,15 +38,17 @@ def Plot_temperature(data):
 if path.exists(DataFile):
     data = pd.read_csv(DataFile) 
     Plot_temperature(data)
+
+    # Create a .gif file as final output
+    file_in = glob.glob("oceanTemp_*.png")
+    file_in.sort(key=os.path.getmtime) #sorting files by timestamp
+    file_out = "OceanTemp.gif"
+
+    img, *imgs = [Image.open(f) for f in file_in]
+    img.save(fp=file_out, format='GIF', append_images=imgs,
+         save_all=True, duration=1200, loop=0)
+
 else:
     print("The file Doesn't exist...!")
 
 
-# Create a .gif file as final output
-file_in = glob.glob("oceanTemp_*.png")
-file_in.sort(key=os.path.getmtime) #sorting files by timestamp
-file_out = "OceanTemp.gif"
-
-img, *imgs = [Image.open(f) for f in file_in]
-img.save(fp=file_out, format='GIF', append_images=imgs,
-         save_all=True, duration=1200, loop=0)
