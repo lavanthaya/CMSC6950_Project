@@ -3,7 +3,7 @@ CMSC6950_Project | ARGOPY
 
 ## Installation instruction
 ### Create a conda environment
- $ conda create -n <env name> python=3.8.5
+ $ conda create -n env_name python=3.8.5
 
 ### Activate the conda environment
  $ conda activate my_env
