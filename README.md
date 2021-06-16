@@ -7,14 +7,17 @@ CMSC6950_Project | ARGOPY
 
 ### Activate the conda environment
  $ conda activate my_env
+ 
+### Install dependencies
+ $ conda install -c conda-forge cartopy
+ $ pip install seaborn, netCDF, Pillow==6.2.2, matplotlib
   
 ### Install ARGOPY
  $ pip install git+http://github.com/euroargodev/argopy.git@master
 
-### Install other dependencies
- $ pip install seaborn, netCDF
-
-### If matplotlib is not properly installed
- $ pip install Pillow==6.2.2, matplotlib 
+### To check the installation run below command in Python shell
+ >> from argopy import DataFetcher as ArgoDataFetcher
+ 
+ 
 
 
