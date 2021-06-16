@@ -19,6 +19,7 @@ def plot_sspeed_temp(data, month):
     plt.grid(True)
     plt.savefig('sspeed_temp_'+month+'.png')
     print('sspeed_temp_'+month+'.png '+"File created")
+    plt.close(fig)
 
 
 def plot_sspeed_salinity(data, month):
@@ -31,6 +32,7 @@ def plot_sspeed_salinity(data, month):
     plt.grid(True)
     plt.savefig('sspeed_sal_'+month+'.png')
     print('sspeed_sal_'+month+'.png '+"File created")
+    plt.close(fig)
 
 def make_gif(file_in, file_out):
     ss_files = glob.glob(file_in)

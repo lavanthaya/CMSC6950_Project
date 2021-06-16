@@ -33,6 +33,7 @@ def Plot_temperature(data):
         plt.title('Ocean Temperature plot for the month of %s' % month_name)
         plt.savefig('oceanTemp_'+month_name+'.png')
         print('oceanTemp_'+month_name+'.png '+"File created")
+        plt.close(fig)
 
 
 if path.exists(DataFile):
