@@ -8,8 +8,10 @@ CMSC6950_Project | ARGOPY | Lavan [201990251]
 ### Activate the conda environment
  $ conda activate my_env
  
-### clone the project
+### Clone the project and change to project directory
  $ git clone <https://github.com/lavanthaya/CMSC6950_Project.git>
+ 
+ $ cd CMSC6950_Project
  
 ### Run below command to install the dependencies
  $ make install
@@ -60,4 +62,8 @@ Sound Speed Vs Depth Plot With Salinity, Monthly Visualization
 
 ### Finally, run below command to clean
    $ make clean
+   
+### Reference
+   
+   Maze et al., (2020). argopy: A Python library for Argo ocean data analysis. Journal of Open Source Software, 5(53), 2425, https://doi.org/10.21105/joss.02425
    
